@@ -13,11 +13,11 @@ So why am I writing this then? Well, there were couple of small tweaks that I ha
 
 The specific power bank I used did not seamlessly switch from charging to discharging into the dashcam when the engine turned off. I suspect this was because the power bank controller looks for a new device connection to its output to start delivering power. Therefore, I had to simulate or make the power bank think that I was disconnecting the charging cable and connecting a device for charging. This was easy enough to achieve with two additional diodes.
 
-The modified circuit I used is shown below:
+*The modified circuit*
 
 ![Circuit 1](./img1.png)   ![Circuit 2](./img2.png)
 
-A list of components I used and where I sourced them:
+*List of components*
 
 Item | Link | Price
 ---- | ---- | -----
@@ -30,6 +30,6 @@ SPST switch | |
 Transcend DrivePro 230 |[link](https://www.pbtech.co.nz/product/CAMTRS0231/Transcend-DrivePro-230-Dash-Cam-with-Buit-in-WiFi)	| $159
 20,000 mAh power bank | | $60
 
-Assembly:
+*Final assembly*
 
 ![Assembly](./img3.png)
