@@ -13,7 +13,7 @@ Having come across AppImages when downloading some applications for Debian I fig
 
 So I had a look at the [documentation around pkg2appimage](https://docs.appimage.org/packaging-guide/converting-binary-packages/pkg2appimage.html) utility as well as some [examples recipes](https://github.com/AppImage/pkg2appimage/tree/master/recipes). Recipes are essentially a mark up file providing instructions to `pkg2appimage` utility on how to construct the AppImage.
 
-The best way to learn the syntax for the yml mark up files is to read the documentation and have a look at few example. Maybe even run a simple example file through the `pk2appimage` utility to get a sense of how the sausage is made.
+The best way to learn the syntax for the yml mark up files is to read the documentation and have a look at few examples. Maybe even run a simple example file through the `pk2appimage` utility to get a sense of how the sausage is made.
 
 If anyone wants to create an AppImage for Movian the recipe I constructed is below. I managed to create this AppImage successfully through mostly trial and error. I just like that it is accessible enough for a non software developer like me to be able to dabble in and get something useful out of it.
 
@@ -36,6 +36,7 @@ ingredients:
     - /source/path/movian-5.0.723-deank-linux-amd64.deb
 
 # Watch and note the indentation below to avoid grief
+
 script:
   - cp /source/path/showtime.png .
 ```
